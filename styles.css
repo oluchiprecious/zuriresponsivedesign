@@ -7,77 +7,84 @@
     font-family: 'Rubik', sans-serif;
 }
 
-div.nav-bar {
+.nav-bar {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 1rem 6rem;
+    padding: 1rem 1.5rem;
     width: 100vw;
     background: #304353;
 }
 
-div.logo {
+.logo {
     font-size: 1.5rem;
     color: #bcc3c7;
 }
 
-ul.nav-links {
-    display: flex;
-    margin: 0;
-    padding: 0;
+.nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    padding: 24px; 
 }
-
-ul li {
-    margin: 0 2vw;
-    list-style: none;
-    font-size: 1.1rem;
-}
-
-ul li a {
+.link{
     text-decoration: none;
     color: #88949B;
-    padding: 0.5vw;
+    font-size: 1.1rem;
+    margin-top: 20px;
 }
 
-ul li a:hover {
+.close{
+    width: 20px; 
+    height: 20px;
+    align-self: flex-end;
+}
+
+a:hover {
     color: #304353;
     background: #fff;
     padding: 0.5rem;
 }
 
-div.hero-section {
+.hero-section {
     background: #304353;
-    padding: 10rem;
+    padding: 4rem 2rem;
 }
 
-div.hero-content-heading {
+.hero-content-heading {
     text-align: center;
 }
 
-div.hero-content-heading h3 {
+.hero-content-heading h2 {
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-weight: 300;
+    font-weight: 750;
     color: #bcc3c7;
 }
 
-div.hero-content-heading p {
+.hero-content-heading p {
     text-align: center;
-    padding-top: 0.7rem;
+    padding-top: 0.8rem;
     color: #88949B;
     font-size: 1rem;
     letter-spacing: 2px;
     font-weight: 300;
 }
 
-div.hero-content-btn {
+.hero-content-btn {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 2rem;
 }
 
-div.hero-content-btn a {
+.hero-content-btn a {
     background: #E44C65;
     text-decoration: none;
     color: #bcc3c7;
@@ -87,42 +94,40 @@ div.hero-content-btn a {
     letter-spacing: 2px;
 }
 
-div.hero-background {
+.hero-background {
     background: #f0f0f0;
-    padding: 10rem;
+    padding: 8rem 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-div.background {
+.hero-background .background {
     background: #fff;
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
-    padding: 15px 40px;
-    width: 550px;
-    height: 220px;
-    position: relative;
+    padding: 15px 30px;
+ 
 }
 
-div.background h4 {
-    padding: 2rem;
+.background h4 {
+    padding: 2rem 0;
     color: #555657;
     font-size: 1rem;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
-div.background p {
+.background p {
     color: #A6A5AA;
-    padding-left: 2rem;
     font-size: 0.8rem;
     letter-spacing: 2px;
 }
 
-div.hero-background-pos {
-    position: absolute;
+.hero-background-pos {
+   /* position: absolute;
     right: 0px;
-    left: 66%;
+    left: 66%;*/
+    display: none;
     background: #fff;
     width: 140px;
     height: 140px;
@@ -130,27 +135,27 @@ div.hero-background-pos {
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
 }
 
-div.snapshot-team {
+.snapshot-team {
     background: #f0f0f0;
     text-align: center;
-    padding-top: 2rem;
+    padding: 2rem 1.5rem;
 }
 
-div.snapshot-team h2 {
+.snapshot-team h2 {
     color: #555657;
     font-size: 1.5rem;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
-div.snapshot-team p {
+.snapshot-team p {
     color: #A6A5AA;
     font-size: 1rem;
     letter-spacing: 2px;
     padding-top: 0.8rem;
 }
 
-div.snapshot-box {
+.snapshot-box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,7 +165,8 @@ div.snapshot-box {
 
 div.snapshot-box-content {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 div.box1 {
@@ -249,7 +255,7 @@ div.img img {
 
 div.footer {
     background: #304353;
-    padding: 3rem;
+    padding: 3rem 1,5rem;
 }
 
 div.footer-content {
@@ -270,17 +276,18 @@ div.footer-content p {
     padding-top: 0.8rem;
 }
 
-div.footer-input {
+.footer-input {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding-top: 3rem;
 }
 
 input[type="text"] {
-    margin-right: 10px;
+    
     padding: 10px 20px;
-    width: 25%;
+    width: 100%;
     outline: none;
     border: 1px solid #bcc3c7;
     background: transparent;
@@ -290,9 +297,9 @@ input[type="text"] {
 }
 
 input[type="email"] {
-    margin-right: 10px;
+    margin-top: 10px;
     padding: 10px 20px;
-    width: 25%;
+    width: 100%;
     outline: none;
     border: 1px solid #bcc3c7;
     background: transparent;
@@ -344,4 +351,31 @@ div.footer h6 {
     color: #88949B;
     font-size: 1rem;
     padding-top: 6rem;
+}
+
+@media (min-width: 768px) {
+ 
+    .nav-links{
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+        position: static;
+        width: fit-content;
+        padding: 0;
+    }
+    .link{
+        margin: 0 0 0 32px;
+        padding: 0.5rem;
+    }
+    .close, .hamburger{
+        display: none;
+    }
+    .hero-background .background{
+        width: 550px;
+        padding: 15px 30px 30px;
+    }
+    .hero-background-pos{
+        display: block;
+        margin-left: -55px;
+    }
 }
