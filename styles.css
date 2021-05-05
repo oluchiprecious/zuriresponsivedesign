@@ -7,13 +7,19 @@
     font-family: 'Rubik', sans-serif;
 }
 
+.nav-wrapper{
+    background-color: #304353;
+}
+
 .nav-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem 1.5rem;
     width: 100vw;
-    background: #304353;
+    max-width: 1440px;
+    margin: 0 auto;
+   
 }
 
 .logo {
@@ -163,13 +169,13 @@ a:hover {
     padding: 4rem 6rem;
 }
 
-div.snapshot-box-content {
+.snapshot-box-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-div.box1 {
+.box1 {
     background: #fff;
     padding: 10px 20px;
     width: 220px;
@@ -179,7 +185,7 @@ div.box1 {
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
 }
 
-div.box3 {
+.box3 {
     background: #304353;
     padding: 10px 20px;
     width: 220px;
@@ -189,14 +195,14 @@ div.box3 {
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
 }
 
-div.box3 h5 {
+.box3 h5 {
     text-align: center;
     padding-top: 2rem;
     color: #E44C65;
     font-size: 1rem;
 }
 
-div.circle {
+.circle {
     display: flex;
     margin: 0 auto;
     width: 90px;
@@ -207,69 +213,70 @@ div.circle {
     
 }
 
-div.box1 h5 {
+.box1 h5 {
     text-align: center;
     padding-top: 2rem;
     color: #E44C65;
     font-size: 1rem;
 }
 
-div.gallery-section {
+.gallery-section {
     background: #fff;
     padding: 4rem;
 }
 
-div.gallery-content {
+.gallery-content {
     text-align: center;
 }
 
-div.gallery-content h4 {
+.gallery-content h4 {
     color: #555657;
     font-size: 1.5rem;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
-div.gallery-content p {
+.gallery-content p {
     color: #A6A5AA;
     font-size: 1rem;
     letter-spacing: 2px;
     padding-top: 0.8rem;
 }
 
-div.gallery-img {
+.gallery-img {
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
    padding-top: 3rem;
 }
 
-div.img {
+.img {
     margin: 10px;
 }
 
-div.img img {
+.img img {
     width: 250px;
     height: 180px;
 }
 
-div.footer {
+.footer {
     background: #304353;
-    padding: 3rem 1,5rem;
+    padding: 3rem 2rem;
 }
 
-div.footer-content {
+.footer-content {
     text-align: center;
 }
 
-div.footer-content h4 {
+.footer-content h4 {
     color: #bcc3c7;
     font-size: 1.5rem;
     letter-spacing: 2px;
     text-transform: uppercase;
+    padding-top: 1rem;
 }
 
-div.footer-content p {
+.footer-content p {
     color: #88949B;
     font-size: 1rem;
     letter-spacing: 2px;
@@ -278,14 +285,14 @@ div.footer-content p {
 
 .footer-input {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 3rem;
+    padding-top: 2rem;
 }
 
 input[type="text"] {
-    
+    margin-top: 10px;
     padding: 10px 20px;
     width: 100%;
     outline: none;
@@ -312,7 +319,7 @@ input[type="email"] {
     color: #A6A5AA;
 }
 
-div.footer-textarea {
+.footer-textarea {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -320,7 +327,7 @@ div.footer-textarea {
 }
 
 textarea {
-    width: 51%;
+    width: 100%;
     height: 150px;
     padding: 0.5rem;
     outline: none;
@@ -377,5 +384,19 @@ div.footer h6 {
     .hero-background-pos{
         display: block;
         margin-left: -55px;
+    }
+    .footer-input{
+        flex-direction: row;
+    }
+    input[type="text"] {
+        max-width: 30%;
+    }
+    input[type="email"] {
+        margin-left: 10px;
+        max-width:30%;
+    }
+    textarea{
+        width: 40%;
+        align-content: center;
     }
 }
